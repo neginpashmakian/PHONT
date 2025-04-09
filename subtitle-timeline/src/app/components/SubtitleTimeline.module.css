@@ -1,0 +1,48 @@
+.timelineContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: black;
+  color: white;
+  font-size: 24px;
+  padding: 2rem;
+  height: 300px;
+  justify-content: center;
+}
+
+.subtitleBox {
+  opacity: 0;
+  transform: scale(1);
+  transition: opacity 0.2s ease-in;
+  will-change: transform;
+  transform-origin: center; /* Make sure the transformation is centered */
+}
+
+.subtitleBox.animate {
+  animation: bounceScaleDistort 1.2s ease forwards;
+  opacity: 1;
+}
+
+@keyframes bounceScaleDistort {
+  0% {
+    transform: scale(1); /* Start at normal size */
+  }
+  25% {
+    transform: scale(1.5) skewX(-5deg); /* Grow and distort slightly */
+  }
+  50% {
+    transform: scale(1.3) skewX(5deg); /* Shrink and distort in the opposite direction */
+  }
+  75% {
+    transform: scale(1.4) skewX(-5deg); /* Grow again */
+  }
+  100% {
+    transform: scale(1) skewX(0deg); /* Return to normal size */
+  }
+}
+
+.time {
+  margin-top: 1rem;
+  font-size: 14px;
+  opacity: 0.5;
+}

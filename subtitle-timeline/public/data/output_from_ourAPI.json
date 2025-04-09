@@ -1,0 +1,744 @@
+[
+  {
+    "start_time": 0.88,
+    "end_time": 3.1999998,
+    "start_frame": "00:00:00:27",
+    "end_frame": "00:00:03:07",
+    "subtitle": "Beth is calling to tell you the implosion test failed.",
+    "emotion": "Fear",
+    "emotion_intensity": 1,
+    "confidence_utterance": 1,
+    "speech_rate": 0.790229953180743,
+    "volume": 0.818075149954631,
+    "words": [
+      {
+        "word": "Beth",
+        "start": 0.88,
+        "end": 1.12,
+        "emphasis": 0,
+        "confidence_word": 0.37771484
+      },
+      {
+        "word": "is",
+        "start": 1.12,
+        "end": 1.28,
+        "emphasis": 0.366514265100231,
+        "confidence_word": 0.29691774
+      },
+      {
+        "word": "calling",
+        "start": 1.28,
+        "end": 1.5999999,
+        "emphasis": 0,
+        "confidence_word": 0.7160401
+      },
+      {
+        "word": "to",
+        "start": 1.5999999,
+        "end": 1.68,
+        "emphasis": 0.0789540227416619,
+        "confidence_word": 0.9693477
+      },
+      {
+        "word": "tell",
+        "start": 1.68,
+        "end": 1.8399999,
+        "emphasis": 0,
+        "confidence_word": 0.99731785
+      },
+      {
+        "word": "you",
+        "start": 1.8399999,
+        "end": 2,
+        "emphasis": 0,
+        "confidence_word": 0.9512196
+      },
+      {
+        "word": "the",
+        "start": 2,
+        "end": 2.1599998,
+        "emphasis": 0.18481048159762,
+        "confidence_word": 0.9359876
+      },
+      {
+        "word": "implosion",
+        "start": 2.1599998,
+        "end": 2.56,
+        "emphasis": 0,
+        "confidence_word": 0.97395575
+      },
+      {
+        "word": "test",
+        "start": 2.56,
+        "end": 2.8,
+        "emphasis": 0,
+        "confidence_word": 0.9988839
+      },
+      {
+        "word": "failed.",
+        "start": 2.8,
+        "end": 3.1999998,
+        "emphasis": 0,
+        "confidence_word": 0.98025
+      }
+    ]
+  },
+  {
+    "start_time": 3.23333313333333,
+    "end_time": 4.02,
+    "start_frame": "00:00:03:08",
+    "end_frame": "00:00:04:02",
+    "subtitle": "Hello, Hans?",
+    "emotion": "Neutral",
+    "emotion_intensity": 1,
+    "confidence_utterance": 1,
+    "speech_rate": 0.48780475907201,
+    "volume": 0.263848181807924,
+    "words": [
+      {
+        "word": "Hans?",
+        "start": 3.52,
+        "end": 4.02,
+        "emphasis": 0,
+        "confidence_word": 0.9589715
+      }
+    ]
+  },
+  {
+    "start_time": 4.4,
+    "end_time": 5.38,
+    "start_frame": "00:00:04:13",
+    "end_frame": "00:00:05:12",
+    "subtitle": "Yes he's here.",
+    "emotion": "Anger",
+    "emotion_intensity": 1,
+    "confidence_utterance": 1,
+    "speech_rate": 0.54421768707483,
+    "volume": 0.26981884184031,
+    "words": [
+      {
+        "word": "Yes",
+        "start": 4.4,
+        "end": 4.64,
+        "emphasis": 0,
+        "confidence_word": 0.58033425
+      },
+      {
+        "word": "he's",
+        "start": 4.64,
+        "end": 4.88,
+        "emphasis": 0.185912232175584,
+        "confidence_word": 0.99717146
+      },
+      {
+        "word": "here.",
+        "start": 4.88,
+        "end": 5.38,
+        "emphasis": 0.811831685087846,
+        "confidence_word": 0.9766854
+      }
+    ]
+  },
+  {
+    "start_time": 6.56,
+    "end_time": 7.06,
+    "start_frame": "00:00:06:18",
+    "end_frame": "00:00:07:03",
+    "subtitle": "Yes.",
+    "emotion": "Neutral",
+    "emotion_intensity": 1,
+    "confidence_utterance": 1,
+    "speech_rate": 0.266666666666667,
+    "volume": 0.51772647823345,
+    "words": [
+      {
+        "word": "Yes.",
+        "start": 6.56,
+        "end": 7.06,
+        "emphasis": 0,
+        "confidence_word": 0.9402535
+      }
+    ]
+  },
+  {
+    "start_time": 10.32,
+    "end_time": 11.219999,
+    "start_frame": "00:00:10:11",
+    "end_frame": "00:00:11:08",
+    "subtitle": "Is he wrong?",
+    "emotion": "Confusion",
+    "emotion_intensity": 1,
+    "confidence_utterance": 1,
+    "speech_rate": 0.444444938272154,
+    "volume": 0.166726193532484,
+    "words": [
+      {
+        "word": "Is",
+        "start": 10.32,
+        "end": 10.48,
+        "emphasis": 0,
+        "confidence_word": 0.9089523
+      },
+      {
+        "word": "he",
+        "start": 10.48,
+        "end": 10.719999,
+        "emphasis": 0,
+        "confidence_word": 0.9978504
+      },
+      {
+        "word": "wrong?",
+        "start": 10.719999,
+        "end": 11.219999,
+        "emphasis": 0.59103142519116,
+        "confidence_word": 0.99963987
+      }
+    ]
+  },
+  {
+    "start_time": 11.679999,
+    "end_time": 12.34,
+    "start_frame": "00:00:11:21",
+    "end_frame": "00:00:12:11",
+    "subtitle": "Oh, no.",
+    "emotion": "Neutral",
+    "emotion_intensity": 1,
+    "confidence_utterance": 1,
+    "speech_rate": 0.353534817876539,
+    "volume": 0.529947800569528,
+    "words": [
+      {
+        "word": "Oh,",
+        "start": 11.679999,
+        "end": 11.84,
+        "emphasis": 0.555391660373532,
+        "confidence_word": 0.51492274
+      },
+      {
+        "word": "no.",
+        "start": 11.84,
+        "end": 12.34,
+        "emphasis": 0,
+        "confidence_word": 0.9593494
+      }
+    ]
+  },
+  {
+    "start_time": 13.2,
+    "end_time": 13.7,
+    "start_frame": "00:00:13:07",
+    "end_frame": "00:00:13:22",
+    "subtitle": "No.",
+    "emotion": "Neutral",
+    "emotion_intensity": 1,
+    "confidence_utterance": 1,
+    "speech_rate": 0.2,
+    "volume": 0.863482030217354,
+    "words": [
+      {
+        "word": "No.",
+        "start": 13.2,
+        "end": 13.7,
+        "emphasis": 0.820223242780824,
+        "confidence_word": 0.642925
+      }
+    ]
+  },
+  {
+    "start_time": 14.675,
+    "end_time": 16.295,
+    "start_frame": "00:00:14:21",
+    "end_frame": "00:00:16:10",
+    "subtitle": "So we're about to fire a dud.",
+    "emotion": "Anger",
+    "emotion_intensity": 1,
+    "confidence_utterance": 1,
+    "speech_rate": 0.596707818930041,
+    "volume": 0.91220654487602,
+    "words": [
+      {
+        "word": "So",
+        "start": 14.675,
+        "end": 14.915,
+        "emphasis": 0,
+        "confidence_word": 0.91093516
+      },
+      {
+        "word": "we're",
+        "start": 14.915,
+        "end": 15.075,
+        "emphasis": 0,
+        "confidence_word": 0.9976653
+      },
+      {
+        "word": "about",
+        "start": 15.075,
+        "end": 15.395,
+        "emphasis": 0,
+        "confidence_word": 0.9997354
+      },
+      {
+        "word": "to",
+        "start": 15.395,
+        "end": 15.475,
+        "emphasis": 0.388493166467511,
+        "confidence_word": 0.9951585
+      },
+      {
+        "word": "fire",
+        "start": 15.475,
+        "end": 15.715,
+        "emphasis": 0.883897014893543,
+        "confidence_word": 0.9984249
+      },
+      {
+        "word": "a",
+        "start": 15.715,
+        "end": 15.795,
+        "emphasis": 0.402325156021409,
+        "confidence_word": 0.9492589
+      },
+      {
+        "word": "dud.",
+        "start": 15.795,
+        "end": 16.295,
+        "emphasis": 0.9574531111399,
+        "confidence_word": 0.83180165
+      }
+    ]
+  },
+  {
+    "start_time": 16.915,
+    "end_time": 17.415,
+    "start_frame": "00:00:16:28",
+    "end_frame": "00:00:17:13",
+    "subtitle": "No.",
+    "emotion": "Surprise (negative)",
+    "emotion_intensity": 1,
+    "confidence_utterance": 1,
+    "speech_rate": 0.2,
+    "volume": 0.133161568156116,
+    "words": [
+      {
+        "word": "No.",
+        "start": 16.915,
+        "end": 17.415,
+        "emphasis": 0,
+        "confidence_word": 0.9969781
+      }
+    ]
+  },
+  {
+    "start_time": 18.115,
+    "end_time": 18.435,
+    "start_frame": "00:00:18:04",
+    "end_frame": "00:00:18:14",
+    "subtitle": "Explain.",
+    "emotion": "Confusion",
+    "emotion_intensity": 1,
+    "confidence_utterance": 1,
+    "speech_rate": 0.833333333333333,
+    "volume": 0.505047064174955,
+    "words": [
+      {
+        "word": "Explain.",
+        "start": 18.115,
+        "end": 18.435,
+        "emphasis": 0,
+        "confidence_word": 0.9556615
+      }
+    ]
+  },
+  {
+    "start_time": 18.4683333333333,
+    "end_time": 19.075,
+    "start_frame": "00:00:18:15",
+    "end_frame": "00:00:19:03",
+    "subtitle": "Well, I can't.",
+    "emotion": "Neutral",
+    "emotion_intensity": 1,
+    "confidence_utterance": 1,
+    "speech_rate": 0.729166666666666,
+    "volume": 0.768155459290071,
+    "words": [
+      {
+        "word": "I",
+        "start": 18.675,
+        "end": 18.755001,
+        "emphasis": 0,
+        "confidence_word": 0.9990614
+      },
+      {
+        "word": "can't.",
+        "start": 18.755001,
+        "end": 19.075,
+        "emphasis": 0,
+        "confidence_word": 0.997873
+      }
+    ]
+  },
+  {
+    "start_time": 19.1083333333333,
+    "end_time": 22.383688,
+    "start_frame": "00:00:19:04",
+    "end_frame": "00:00:22:13",
+    "subtitle": "I just I I just know I know the implosion lenses will work.",
+    "emotion": "Distress",
+    "emotion_intensity": 1,
+    "confidence_utterance": 1,
+    "speech_rate": 0.59439471677797,
+    "volume": 0.354404549816951,
+    "words": [
+      {
+        "word": "just",
+        "start": 19.235,
+        "end": 19.395,
+        "emphasis": 0.00380138505164118,
+        "confidence_word": 0.9981787
+      },
+      {
+        "word": "I",
+        "start": 19.475,
+        "end": 19.875,
+        "emphasis": 0,
+        "confidence_word": 0.99760914
+      },
+      {
+        "word": "I",
+        "start": 19.875,
+        "end": 20.115,
+        "emphasis": 0,
+        "confidence_word": 0.9855988
+      },
+      {
+        "word": "just",
+        "start": 20.115,
+        "end": 20.355,
+        "emphasis": 0,
+        "confidence_word": 0.9975395
+      },
+      {
+        "word": "know",
+        "start": 20.355,
+        "end": 20.595,
+        "emphasis": 0.629062570787344,
+        "confidence_word": 0.99412787
+      },
+      {
+        "word": "I",
+        "start": 20.595,
+        "end": 20.755,
+        "emphasis": 0,
+        "confidence_word": 0.41544372
+      },
+      {
+        "word": "know",
+        "start": 20.755,
+        "end": 20.994999,
+        "emphasis": 0.419644461036936,
+        "confidence_word": 0.9958246
+      },
+      {
+        "word": "the",
+        "start": 20.994999,
+        "end": 21.235,
+        "emphasis": 0,
+        "confidence_word": 0.9525092
+      },
+      {
+        "word": "implosion",
+        "start": 21.235,
+        "end": 21.635,
+        "emphasis": 0,
+        "confidence_word": 0.95324516
+      },
+      {
+        "word": "lenses",
+        "start": 21.635,
+        "end": 21.903688,
+        "emphasis": 0.224705103598931,
+        "confidence_word": 0.6950038
+      },
+      {
+        "word": "will",
+        "start": 21.903688,
+        "end": 22.223688,
+        "emphasis": 0,
+        "confidence_word": 0.96470624
+      },
+      {
+        "word": "work.",
+        "start": 22.223688,
+        "end": 22.383688,
+        "emphasis": 0.460576901272588,
+        "confidence_word": 0.99947
+      }
+    ]
+  },
+  {
+    "start_time": 22.4170213333333,
+    "end_time": 28.403688,
+    "start_frame": "00:00:22:14",
+    "end_frame": "00:00:28:13",
+    "subtitle": "If we fire these detonators and they don't trigger a reaction, 2 years' worth of plutonium will be scattered across White Sands.",
+    "emotion": "Neutral",
+    "emotion_intensity": 1,
+    "confidence_utterance": 1,
+    "speech_rate": 0.70874861572536,
+    "volume": 0.369699675223501,
+    "words": [
+      {
+        "word": "we",
+        "start": 22.623688,
+        "end": 22.783688,
+        "emphasis": 0.550953170258645,
+        "confidence_word": 0.99678385
+      },
+      {
+        "word": "fire",
+        "start": 22.783688,
+        "end": 23.02369,
+        "emphasis": 0.0439125127867509,
+        "confidence_word": 0.9968901
+      },
+      {
+        "word": "these",
+        "start": 23.02369,
+        "end": 23.18369,
+        "emphasis": 0,
+        "confidence_word": 0.99844295
+      },
+      {
+        "word": "detonators",
+        "start": 23.18369,
+        "end": 23.68369,
+        "emphasis": 0.449364949394316,
+        "confidence_word": 0.9998129
+      },
+      {
+        "word": "and",
+        "start": 23.743689,
+        "end": 23.903688,
+        "emphasis": 0,
+        "confidence_word": 0.95738244
+      },
+      {
+        "word": "they",
+        "start": 23.903688,
+        "end": 23.983688,
+        "emphasis": 0,
+        "confidence_word": 0.9982109
+      },
+      {
+        "word": "don't",
+        "start": 23.983688,
+        "end": 24.223688,
+        "emphasis": 0,
+        "confidence_word": 0.9999501
+      },
+      {
+        "word": "trigger",
+        "start": 24.223688,
+        "end": 24.543688,
+        "emphasis": 0,
+        "confidence_word": 0.9993168
+      },
+      {
+        "word": "a",
+        "start": 24.543688,
+        "end": 24.703688,
+        "emphasis": 0,
+        "confidence_word": 0.8116422
+      },
+      {
+        "word": "reaction,",
+        "start": 24.703688,
+        "end": 25.103687,
+        "emphasis": 0,
+        "confidence_word": 0.9988596
+      },
+      {
+        "word": "2",
+        "start": 25.103687,
+        "end": 25.343689,
+        "emphasis": 0,
+        "confidence_word": 0.9800601
+      },
+      {
+        "word": "years'",
+        "start": 25.343689,
+        "end": 25.583689,
+        "emphasis": 0,
+        "confidence_word": 0.8138174
+      },
+      {
+        "word": "worth",
+        "start": 25.583689,
+        "end": 25.743689,
+        "emphasis": 0,
+        "confidence_word": 0.99910945
+      },
+      {
+        "word": "of",
+        "start": 25.743689,
+        "end": 25.983688,
+        "emphasis": 0,
+        "confidence_word": 0.99874264
+      },
+      {
+        "word": "plutonium",
+        "start": 25.983688,
+        "end": 26.463688,
+        "emphasis": 0,
+        "confidence_word": 0.9235139
+      },
+      {
+        "word": "will",
+        "start": 26.463688,
+        "end": 26.623688,
+        "emphasis": 0.118091779745681,
+        "confidence_word": 0.99562526
+      },
+      {
+        "word": "be",
+        "start": 26.623688,
+        "end": 26.703688,
+        "emphasis": 0,
+        "confidence_word": 0.9998976
+      },
+      {
+        "word": "scattered",
+        "start": 26.703688,
+        "end": 27.203688,
+        "emphasis": 0,
+        "confidence_word": 0.9995504
+      },
+      {
+        "word": "across",
+        "start": 27.263687,
+        "end": 27.663689,
+        "emphasis": 0.630960809734138,
+        "confidence_word": 0.99961406
+      },
+      {
+        "word": "White",
+        "start": 27.663689,
+        "end": 27.903688,
+        "emphasis": 0,
+        "confidence_word": 0.87719715
+      },
+      {
+        "word": "Sands.",
+        "start": 27.903688,
+        "end": 28.403688,
+        "emphasis": 0,
+        "confidence_word": 0.9985266
+      }
+    ]
+  },
+  {
+    "start_time": 28.543688,
+    "end_time": 30.403688,
+    "start_frame": "00:00:28:17",
+    "end_frame": "00:00:30:13",
+    "subtitle": "A month of my salary against Tedbox.",
+    "emotion": "Determination",
+    "emotion_intensity": 1,
+    "confidence_utterance": 1,
+    "speech_rate": 0.645161290322581,
+    "volume": 0.497654226104783,
+    "words": [
+      {
+        "word": "A",
+        "start": 28.543688,
+        "end": 28.703688,
+        "emphasis": 0,
+        "confidence_word": 0.9953666
+      },
+      {
+        "word": "month",
+        "start": 28.703688,
+        "end": 28.943687,
+        "emphasis": 0.606198629686184,
+        "confidence_word": 0.998626
+      },
+      {
+        "word": "of",
+        "start": 28.943687,
+        "end": 29.02369,
+        "emphasis": 0.986107108348133,
+        "confidence_word": 0.72626805
+      },
+      {
+        "word": "my",
+        "start": 29.02369,
+        "end": 29.263687,
+        "emphasis": 0,
+        "confidence_word": 0.99260557
+      },
+      {
+        "word": "salary",
+        "start": 29.263687,
+        "end": 29.663689,
+        "emphasis": 0,
+        "confidence_word": 0.9995628
+      },
+      {
+        "word": "against",
+        "start": 29.663689,
+        "end": 29.903688,
+        "emphasis": 0.738337522127548,
+        "confidence_word": 0.9958599
+      },
+      {
+        "word": "Tedbox.",
+        "start": 29.903688,
+        "end": 30.403688,
+        "emphasis": 0,
+        "confidence_word": 0.4684206
+      }
+    ]
+  },
+  {
+    "start_time": 30.463688,
+    "end_time": 30.963688,
+    "start_frame": "00:00:30:15",
+    "end_frame": "00:00:30:30",
+    "subtitle": "Sensitiveise.",
+    "emotion": "Determination",
+    "emotion_intensity": 1,
+    "confidence_utterance": 1,
+    "speech_rate": 0.866666666666667,
+    "volume": 0.493577942890828,
+    "words": [
+      {
+        "word": "Sensitiveise.",
+        "start": 30.463688,
+        "end": 30.963688,
+        "emphasis": 0,
+        "confidence_word": 0.63546216
+      }
+    ]
+  },
+  {
+    "start_time": 32.38369,
+    "end_time": 32.88369,
+    "start_frame": "00:00:32:13",
+    "end_frame": "00:00:32:28",
+    "subtitle": "Jesus.",
+    "emotion": "Neutral",
+    "emotion_intensity": 1,
+    "confidence_utterance": 1,
+    "speech_rate": 0.4,
+    "volume": 0.573750455530072,
+    "words": [
+      {
+        "word": "Jesus.",
+        "start": 32.38369,
+        "end": 32.88369,
+        "emphasis": 0,
+        "confidence_word": 0.90979975
+      }
+    ]
+  }
+]
