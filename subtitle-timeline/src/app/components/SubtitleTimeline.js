@@ -21,6 +21,11 @@ const SubtitleTimeline = () => {
 
     fetchSubtitles();
   }, []);
+  const formatTime = (seconds) => {
+    const mins = Math.floor(seconds / 60);
+    const secs = Math.floor(seconds % 60);
+    return `${mins}:${secs.toString().padStart(2, "0")}`;
+  };
 
   // Simulate the video time progress
   useEffect(() => {
@@ -140,7 +145,7 @@ const SubtitleTimeline = () => {
         </button>
       </div>
 
-      <div className={styles.animationControlBox}>
+      {/* <div className={styles.animationControlBox}>
         <label htmlFor="animationToggle">Animation</label>
         <input
           type="checkbox"
@@ -148,19 +153,34 @@ const SubtitleTimeline = () => {
           checked={isAnimationOn}
           onChange={toggleAnimation}
         />
+      </div> */}
+      <div className={styles.animationControlBox}>
+        <label className={styles.toggleSwitch}>
+          <input
+            type="checkbox"
+            checked={isAnimationOn}
+            onChange={toggleAnimation}
+          />
+          <span className={styles.slider}></span>
+        </label>
+        <span className={styles.toggleText}>Animation</span>
       </div>
 
       {/* Timeline Section */}
       <div className={styles.timelineContainer}>
         <div className={styles.timeline} onClick={handleProgressChange}>
+          {Array.from({ length: 20 }).map((_, index) => (
+            <div key={index} className={styles.timelineSegment}></div>
+          ))}
           <div
-            className={styles.timelineProgress}
+            className={styles.timelineIndicator}
             style={{
-              width: `${
+              left: `${
                 (currentTime /
                   (subtitles[subtitles.length - 1]?.end_time || 1)) *
                 100
               }%`,
+              transform: "translateX(-1px)",
             }}
           ></div>
         </div>
