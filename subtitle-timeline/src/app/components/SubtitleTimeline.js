@@ -9,6 +9,7 @@ const SubtitleTimeline = () => {
   const [subtitles, setSubtitles] = useState([]);
   const [isFinished, setIsFinished] = useState(false); // Track if subtitles are finished
   const [isPaused, setIsPaused] = useState(false); // Track if the timeline is paused
+  const [isAnimationOn, setIsAnimationOn] = useState(false); // Track if animation is toggled on
 
   // Fetch the subtitles data
   useEffect(() => {
@@ -52,11 +53,15 @@ const SubtitleTimeline = () => {
   const renderWords = (words) => {
     return words.map((word, index) => {
       const emphasisScale = 1 + word.emphasis;
-      const wordStyle = {
-        transform: `scale(${emphasisScale})`,
-        opacity: word.confidence_word,
-        marginRight: `${word.emphasis * 15}px`, // Add dynamic margin to increase spacing between scaled words
-      };
+
+      const wordStyle = isAnimationOn
+        ? {
+            transform: `scale(${emphasisScale})`,
+            opacity: word.confidence_word,
+            marginRight: `${word.emphasis * 20}px`,
+            marginLeft: `${word.emphasis * 20}px`, // Add dynamic margin to increase spacing between scaled words
+          }
+        : {};
 
       return (
         <span key={index} className={styles.wordWrapper}>
@@ -93,6 +98,11 @@ const SubtitleTimeline = () => {
     setCurrentTime((prev) => Math.max(prev - 15, 0));
   };
 
+  // Toggle animation on/off
+  const toggleAnimation = () => {
+    setIsAnimationOn((prev) => !prev);
+  };
+
   return (
     <div className={styles.appContainer}>
       {/* Video Frame Section */}
@@ -104,9 +114,14 @@ const SubtitleTimeline = () => {
       <div className={styles.subtitleContainer}>
         <div
           className={`${styles.subtitleBox} ${
-            activeSubtitle ? styles.animate : ""
+            isAnimationOn && activeSubtitle ? styles.animate : styles.notanimate
           }`}
         >
+          {/* <div
+          className={`${styles.subtitleBox} ${
+            activeSubtitle ? styles.animate : ""
+          }`}
+        > */}
           {activeSubtitle && renderWords(activeSubtitle.words)}
         </div>
       </div>
@@ -123,6 +138,16 @@ const SubtitleTimeline = () => {
         <button className={styles.toggleButton} onClick={jumpForward}>
           +15s
         </button>
+      </div>
+
+      <div className={styles.animationControlBox}>
+        <label htmlFor="animationToggle">Animation</label>
+        <input
+          type="checkbox"
+          id="animationToggle"
+          checked={isAnimationOn}
+          onChange={toggleAnimation}
+        />
       </div>
 
       {/* Timeline Section */}

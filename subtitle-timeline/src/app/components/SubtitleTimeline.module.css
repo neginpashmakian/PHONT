@@ -76,6 +76,7 @@
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-left: 10px; /* Add space between buttons */
 }
 
 .toggleButton:hover {
@@ -104,35 +105,19 @@
   transition: width 0.1s ease;
 }
 
-/* Pause Button Styling */
-.pauseButton {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #ff4747;
-  color: white;
-  border: none;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+/* Animation Toggle */
+.animationToggle {
+  margin-bottom: 10px;
 }
 
-.pauseButton:hover {
-  background-color: #ff2f2f;
-}
-
-/* Timeline Container and Subtitle Box */
-.timelineContainer {
+.animationLabel {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  background-color: black;
   color: white;
-  font-size: 24px;
+}
 
-  padding: 2rem;
-  text-align: center;
+.animationLabel input {
+  margin-left: 10px;
 }
 
 /* Subtitle Box with Animation */
@@ -151,12 +136,10 @@
   animation: bounceScaleDistort 1.5s ease-in-out forwards;
   opacity: 1;
 }
-
-/* Scaling and Opacity for Words */
-.word {
-  display: inline-block;
-  margin: 0 10px;
-  transition: transform 0.3s ease, opacity 0.5s ease;
+.subtitleBox.notanimate {
+  color: white;
+  /* animation: bounceScaleDistort 1.5s ease-in-out forwards; */
+  opacity: 1;
 }
 
 /* Animation for Bounce and Scale Distortion */
@@ -164,71 +147,28 @@
   0% {
     transform: scale(1);
   }
-  /* 25% {
-    transform: scale(1.2) skewX(-5deg);
-  } */
   50% {
     transform: scale(1.5) skewX(5deg);
   }
-  /* 75% {
-    transform: scale(1.2) skewX(-5deg);
-  } */
   100% {
     transform: scale(1) skewX(0deg);
   }
 }
-
-.time {
-  font-size: 14px;
-  margin-top: 1rem;
-  opacity: 0.5;
-}
-
-.pauseButton {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #ff4747;
-  color: white;
-  border: none;
-  font-size: 16px;
-  cursor: pointer;
+/* Right Side Animation Control Box */
+.animationControlBox {
+  background-color: #222;
+  padding: 10px;
   border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.pauseButton:hover {
-  background-color: #ff2f2f;
-}
-
-.wordWrapper {
-  display: inline-block;
-  margin: 0 8px; /* Adjust spacing between words */
-  vertical-align: middle;
-}
-
-.word {
-  display: inline-block;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-  transform-origin: center;
-}
-/* 15 Seconds Forward and Backward Button Styling */
-.toggleButton {
-  padding: 10px 20px;
-  background-color: #6c63ff;
+  display: flex;
+  align-items: center;
   color: white;
-  border: none;
-  border-radius: 5px;
   font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-left: 10px; /* Add space between buttons */
 }
 
-.toggleButton:hover {
-  background-color: #4d47e0;
+.animationControlBox label {
+  margin-right: 10px;
 }
 
-.toggleButton:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
+.animationControlBox input {
+  transform: scale(1.2); /* Slightly larger checkbox */
 }
