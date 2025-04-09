@@ -51,14 +51,17 @@ const SubtitleTimeline = () => {
   // Render words with dynamic styles
   const renderWords = (words) => {
     return words.map((word, index) => {
+      const emphasisScale = 1 + word.emphasis;
       const wordStyle = {
-        transform: `scale(${1 + word.emphasis})`,
-        opacity: word.confidence_word, // Use confidence for opacity
+        transform: `scale(${emphasisScale})`,
+        opacity: word.confidence_word,
       };
 
       return (
-        <span key={index} style={wordStyle} className={styles.word}>
-          {word.word}
+        <span key={index} className={styles.wordWrapper}>
+          <span className={styles.word} style={wordStyle}>
+            {word.word}
+          </span>
         </span>
       );
     });

@@ -72,3 +72,14 @@
 .pauseButton:hover {
   background-color: #ff2f2f;
 }
+.wordWrapper {
+  display: inline-block;
+  margin: 0 8px; /* adjust spacing between words */
+  vertical-align: middle;
+}
+
+.word {
+  display: inline-block;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform-origin: center;
+}
