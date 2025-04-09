@@ -169,9 +169,20 @@ const SubtitleTimeline = () => {
       {/* Timeline Section */}
       <div className={styles.timelineContainer}>
         <div className={styles.timeline} onClick={handleProgressChange}>
-          {Array.from({ length: 20 }).map((_, index) => (
-            <div key={index} className={styles.timelineSegment}></div>
-          ))}
+          {Array.from({ length: 21 }).map((_, index) => {
+            const totalDuration =
+              subtitles[subtitles.length - 1]?.end_time || 1;
+            const step = totalDuration / 20;
+            const currentTimeMarker = Math.floor(index * step);
+            return (
+              <div key={index} className={styles.timelineSegmentWrapper}>
+                <div className={styles.timelineSegment}></div>
+                <div className={styles.timeLabel}>
+                  {formatTime(currentTimeMarker)}
+                </div>
+              </div>
+            );
+          })}
           <div
             className={styles.timelineIndicator}
             style={{

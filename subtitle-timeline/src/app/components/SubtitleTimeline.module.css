@@ -96,6 +96,20 @@
   align-items: center;
   position: relative;
 }
+.timelineSegmentWrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.timeLabel {
+  font-size: 12px;
+  color: white;
+  opacity: 0.6;
+  margin-top: 4px;
+}
 
 .timeline {
   width: 100%;
