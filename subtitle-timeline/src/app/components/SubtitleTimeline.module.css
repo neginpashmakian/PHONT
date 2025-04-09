@@ -1,3 +1,126 @@
+/* Main App Container */
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f1f1f;
+  height: 100vh;
+  color: white;
+  font-size: 16px;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Video Frame Container */
+.videoContainer {
+  width: 80%;
+  height: 400px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(0, 0, 0, 0.7)
+  );
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.fakeVideo {
+  width: 80%;
+  height: 80%;
+  background-color: #222;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Subtitle Section */
+.subtitleContainer {
+  width: 80%;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 20px;
+  text-align: center;
+  opacity: 0.9;
+}
+
+/* Word Styling for Scaling and Opacity */
+.wordWrapper {
+  display: inline-block;
+  margin: 0 8px; /* adjust spacing between words */
+  vertical-align: middle;
+}
+
+.word {
+  display: inline-block;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform-origin: center;
+}
+
+/* Controls Section */
+.controlsContainer {
+  margin-top: 20px;
+}
+
+.toggleButton {
+  padding: 10px 20px;
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggleButton:hover {
+  background-color: #4d47e0;
+}
+
+/* Timeline Section */
+.timelineContainer {
+  margin-top: 30px;
+  width: 80%;
+}
+
+.timeline {
+  width: 100%;
+  height: 10px;
+  background-color: #444;
+  border-radius: 5px;
+  position: relative;
+}
+
+.timelineProgress {
+  height: 100%;
+  background-color: #6c63ff;
+  border-radius: 5px;
+  transition: width 0.1s ease;
+}
+
+/* Pause Button Styling */
+.pauseButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff4747;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.pauseButton:hover {
+  background-color: #ff2f2f;
+}
+
+/* Timeline Container and Subtitle Box */
 .timelineContainer {
   display: flex;
   flex-direction: column;
@@ -11,6 +134,7 @@
   text-align: center;
 }
 
+/* Subtitle Box with Animation */
 .subtitleBox {
   opacity: 0;
   transform: scale(1);
@@ -27,12 +151,14 @@
   opacity: 1;
 }
 
+/* Scaling and Opacity for Words */
 .word {
   display: inline-block;
   margin: 0 10px;
-  transition: transform 0.2s ease, opacity 0.5s ease;
+  transition: transform 0.3s ease, opacity 0.5s ease;
 }
 
+/* Animation for Bounce and Scale Distortion */
 @keyframes bounceScaleDistort {
   0% {
     transform: scale(1);
@@ -72,9 +198,10 @@
 .pauseButton:hover {
   background-color: #ff2f2f;
 }
+
 .wordWrapper {
   display: inline-block;
-  margin: 0 8px; /* adjust spacing between words */
+  margin: 0 8px; /* Adjust spacing between words */
   vertical-align: middle;
 }
 

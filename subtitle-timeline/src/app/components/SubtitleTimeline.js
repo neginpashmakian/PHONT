@@ -55,6 +55,7 @@ const SubtitleTimeline = () => {
       const wordStyle = {
         transform: `scale(${emphasisScale})`,
         opacity: word.confidence_word,
+        marginRight: `${word.emphasis * 15}px`, // Add dynamic margin to increase spacing between scaled words
       };
 
       return (
@@ -73,18 +74,39 @@ const SubtitleTimeline = () => {
   };
 
   return (
-    <div className={styles.timelineContainer}>
-      <div
-        className={`${styles.subtitleBox} ${
-          activeSubtitle ? styles.animate : ""
-        }`}
-      >
+    <div className={styles.appContainer}>
+      {/* Video Frame Section */}
+      <div className={styles.videoContainer}>
+        <div className={styles.fakeVideo}></div>
+      </div>
+
+      {/* Subtitle Section */}
+      <div className={styles.subtitleContainer}>
         {activeSubtitle && renderWords(activeSubtitle.words)}
       </div>
-      <div className={styles.time}>{currentTime.toFixed(2)}s</div>
-      <button className={styles.pauseButton} onClick={togglePause}>
-        {isPaused ? "Resume" : "Pause"}
-      </button>
+
+      {/* Controls Section */}
+      <div className={styles.controlsContainer}>
+        <button className={styles.toggleButton} onClick={togglePause}>
+          {isPaused ? "Resume" : "Pause"}
+        </button>
+      </div>
+
+      {/* Timeline Section */}
+      <div className={styles.timelineContainer}>
+        <div className={styles.timeline}>
+          <div
+            className={styles.timelineProgress}
+            style={{
+              width: `${
+                (currentTime /
+                  (subtitles[subtitles.length - 1]?.end_time || 1)) *
+                100
+              }%`,
+            }}
+          ></div>
+        </div>
+      </div>
     </div>
   );
 };
