@@ -1,48 +1,74 @@
 .timelineContainer {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  background: black;
+  background-color: black;
   color: white;
   font-size: 24px;
+  height: 100%;
   padding: 2rem;
-  height: 300px;
-  justify-content: center;
+  text-align: center;
 }
 
 .subtitleBox {
   opacity: 0;
   transform: scale(1);
-  transition: opacity 0.2s ease-in;
-  will-change: transform;
-  transform-origin: center; /* Make sure the transformation is centered */
+  transition: opacity 0.2s ease-in-out;
+  transform-origin: center;
+  display: inline-block;
+  width: 100%;
+  max-width: 90%;
+  text-align: center;
 }
 
 .subtitleBox.animate {
-  animation: bounceScaleDistort 1.2s ease forwards;
+  animation: bounceScaleDistort 1.5s ease-in-out forwards;
   opacity: 1;
+}
+
+.word {
+  display: inline-block;
+  margin: 0 10px;
+  transition: transform 0.2s ease, opacity 0.5s ease;
 }
 
 @keyframes bounceScaleDistort {
   0% {
-    transform: scale(1); /* Start at normal size */
+    transform: scale(1);
   }
   25% {
-    transform: scale(1.5) skewX(-5deg); /* Grow and distort slightly */
+    transform: scale(1.2) skewX(-5deg);
   }
   50% {
-    transform: scale(1.3) skewX(5deg); /* Shrink and distort in the opposite direction */
+    transform: scale(1.5) skewX(5deg);
   }
   75% {
-    transform: scale(1.4) skewX(-5deg); /* Grow again */
+    transform: scale(1.2) skewX(-5deg);
   }
   100% {
-    transform: scale(1) skewX(0deg); /* Return to normal size */
+    transform: scale(1) skewX(0deg);
   }
 }
 
 .time {
-  margin-top: 1rem;
   font-size: 14px;
+  margin-top: 1rem;
   opacity: 0.5;
+}
+
+.pauseButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff4747;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.pauseButton:hover {
+  background-color: #ff2f2f;
 }

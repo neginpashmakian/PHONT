@@ -1,4 +1,4 @@
-"use client"; // Add this line at the top to mark the component as client-side
+"use client"; // Mark the component as client-side
 
 import { useEffect, useState } from "react";
 import styles from "./SubtitleTimeline.module.css";
@@ -7,6 +7,8 @@ const SubtitleTimeline = () => {
   const [currentTime, setCurrentTime] = useState(0);
   const [activeSubtitle, setActiveSubtitle] = useState(null);
   const [subtitles, setSubtitles] = useState([]);
+  const [isFinished, setIsFinished] = useState(false); // Track if subtitles are finished
+  const [isPaused, setIsPaused] = useState(false); // Track if the timeline is paused
 
   // Fetch the subtitles data
   useEffect(() => {
@@ -21,12 +23,15 @@ const SubtitleTimeline = () => {
 
   // Simulate the video time progress
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentTime((prev) => prev + 0.1); // Update every 0.1 seconds
-    }, 100);
+    let interval;
+    if (!isPaused && !isFinished) {
+      interval = setInterval(() => {
+        setCurrentTime((prev) => prev + 0.1); // Update every 0.1 seconds
+      }, 100);
+    }
 
-    return () => clearInterval(interval); // Cleanup when component unmounts
-  }, []);
+    return () => clearInterval(interval); // Cleanup when component unmounts or paused
+  }, [isPaused, isFinished]);
 
   // Check and set the active subtitle based on current time
   useEffect(() => {
@@ -36,7 +41,33 @@ const SubtitleTimeline = () => {
     if (current?.subtitle !== activeSubtitle?.subtitle) {
       setActiveSubtitle(current); // Set active subtitle
     }
+
+    // Check if all subtitles have been displayed
+    if (currentTime > subtitles[subtitles.length - 1]?.end_time) {
+      setIsFinished(true); // Stop the time update once all subtitles are shown
+    }
   }, [currentTime, subtitles, activeSubtitle]);
+
+  // Render words with dynamic styles
+  const renderWords = (words) => {
+    return words.map((word, index) => {
+      const wordStyle = {
+        transform: `scale(${1 + word.emphasis})`,
+        opacity: word.confidence_word, // Use confidence for opacity
+      };
+
+      return (
+        <span key={index} style={wordStyle} className={styles.word}>
+          {word.word}
+        </span>
+      );
+    });
+  };
+
+  // Pause/Resume toggle
+  const togglePause = () => {
+    setIsPaused((prev) => !prev);
+  };
 
   return (
     <div className={styles.timelineContainer}>
@@ -45,9 +76,12 @@ const SubtitleTimeline = () => {
           activeSubtitle ? styles.animate : ""
         }`}
       >
-        {activeSubtitle?.subtitle}
+        {activeSubtitle && renderWords(activeSubtitle.words)}
       </div>
       <div className={styles.time}>{currentTime.toFixed(2)}s</div>
+      <button className={styles.pauseButton} onClick={togglePause}>
+        {isPaused ? "Resume" : "Pause"}
+      </button>
     </div>
   );
 };
