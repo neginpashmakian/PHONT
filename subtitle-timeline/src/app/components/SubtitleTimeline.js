@@ -82,7 +82,14 @@ const SubtitleTimeline = () => {
 
       {/* Subtitle Section */}
       <div className={styles.subtitleContainer}>
-        {activeSubtitle && renderWords(activeSubtitle.words)}
+        <div
+          className={`${styles.subtitleBox} ${
+            activeSubtitle ? styles.animate : ""
+          }`}
+        >
+          {activeSubtitle && renderWords(activeSubtitle.words)}
+        </div>
+        {/* {activeSubtitle && renderWords(activeSubtitle.words)} */}
       </div>
 
       {/* Controls Section */}
