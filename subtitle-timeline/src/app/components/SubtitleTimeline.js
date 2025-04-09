@@ -73,6 +73,26 @@ const SubtitleTimeline = () => {
     setIsPaused((prev) => !prev);
   };
 
+  // Handle time progress change when user interacts with the progress bar
+  const handleProgressChange = (e) => {
+    const newTime =
+      (e.clientX / e.target.offsetWidth) *
+      subtitles[subtitles.length - 1]?.end_time;
+    setCurrentTime(newTime);
+  };
+
+  // Jump forward by 15 seconds
+  const jumpForward = () => {
+    setCurrentTime((prev) =>
+      Math.min(prev + 15, subtitles[subtitles.length - 1]?.end_time)
+    );
+  };
+
+  // Jump backward by 15 seconds
+  const jumpBackward = () => {
+    setCurrentTime((prev) => Math.max(prev - 15, 0));
+  };
+
   return (
     <div className={styles.appContainer}>
       {/* Video Frame Section */}
@@ -89,19 +109,25 @@ const SubtitleTimeline = () => {
         >
           {activeSubtitle && renderWords(activeSubtitle.words)}
         </div>
-        {/* {activeSubtitle && renderWords(activeSubtitle.words)} */}
       </div>
 
       {/* Controls Section */}
       <div className={styles.controlsContainer}>
+        <button className={styles.toggleButton} onClick={jumpBackward}>
+          -15s
+        </button>
         <button className={styles.toggleButton} onClick={togglePause}>
           {isPaused ? "Resume" : "Pause"}
+        </button>
+
+        <button className={styles.toggleButton} onClick={jumpForward}>
+          +15s
         </button>
       </div>
 
       {/* Timeline Section */}
       <div className={styles.timelineContainer}>
-        <div className={styles.timeline}>
+        <div className={styles.timeline} onClick={handleProgressChange}>
           <div
             className={styles.timelineProgress}
             style={{
